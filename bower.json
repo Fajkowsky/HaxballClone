@@ -1,0 +1,23 @@
+{
+  "name": "haxball",
+  "version": "0.0.0",
+  "authors": [
+    "Fajkowsky <dawidfajkowski@gmail.com>"
+  ],
+  "description": "Haxball on html5 engine.",
+  "main": "index.html",
+  "keywords": [
+    "haxball"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "phaser": "~2.4.3"
+  }
+}
