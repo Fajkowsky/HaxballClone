@@ -1,17 +1,18 @@
 (function () {
     'use strict';
     var config = {
-        HEIGHT: 800,
-        WIDTH: 600
+        HEIGHT: 860,
+        WIDTH: 455
     };
     window.onload = function () {
-        var game = new Phaser.Game(config.HEIGHT, config.WIDTH, Phaser.AUTO, '', {
+        var game = new Phaser.Game(config.HEIGHT, config.WIDTH, Phaser.AUTO, 'haxball', {
             preload: function () {
                 this.load.image('bluePlayer', 'assets/images/blue_player.png');
                 this.load.image('bluePlayerShot', 'assets/images/blue_player_shot.png');
             },
             create: function () {
-                this.stage.backgroundColor = '#939e7f';
+                this.stage.backgroundColor = '#3b302a';
+
                 this.bluePlayer = this.game.add.sprite(this.world.centerX, this.world.centerY, 'bluePlayer');
                 this.cursors = this.game.input.keyboard.createCursorKeys();
             },

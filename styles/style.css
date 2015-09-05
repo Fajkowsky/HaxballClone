@@ -1,5 +1,22 @@
-body {
-    margin: 0;
-    padding: 0;
+html,body
+{
+    height:100%;
+}
+body
+{
+    display: table;
+    margin: 0 auto;
     background-color: #939e7f;
+}
+
+.container
+{
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+#haxball
+{
+    width: 860px;
+    height: 455px;
 }
