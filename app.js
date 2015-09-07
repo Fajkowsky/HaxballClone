@@ -13,6 +13,7 @@
                 this.stage.backgroundColor = '#3b302a';
 
                 this.field = this.add.sprite(10, 35, 'field');
+                this.field.scale.setTo(840, 408);
             },
             update: function () {
             }
