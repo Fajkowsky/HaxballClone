@@ -26,13 +26,16 @@
 
                 this.ball.body.setCircle(10);
                 this.redPlayer.body.setCircle(16);
-                //this.ball.body.fixedRotation = true;
+                this.ball.body.fixedRotation = true;
                 this.redPlayer.body.fixedRotation = true;
-                this.ball.body.damping = 0.7;
-                this.redPlayer.body.damping = 0.7;
+                this.ball.body.damping = 0.5;
+                this.redPlayer.body.damping = 0.75;
 
                 this.shotBall = function () {
-                    this.ball.body.thrust(30000);
+                    if (this.input.keyboard.isDown(Phaser.Keyboard.SPACEBAR)) {
+                        this.ball.body.velocity.x *= 7;
+                        this.ball.body.velocity.y *= 7;
+                    }
                 };
 
                 this.ball.body.createBodyCallback(this.redPlayer, this.shotBall, this);
